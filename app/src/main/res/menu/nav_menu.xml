@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/nav_rate_app"
+            android:icon="@drawable/ic_baseline_star_24"
+            android:title="Rate this App" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_baseline_share_24"
+            android:title="Share this App" />
+        <item
+            android:id="@+id/nav_dev_page"
+            android:icon="@drawable/ic_baseline_open_in_new_24"
+            android:title="More Useful Apps" />
+    </group>
+
+    <item android:title="You may also like">
+        <menu>
+
+            <item
+                android:id="@+id/nav_whatslink"
+                android:icon="@drawable/ic_baseline_open_in_new_24"
+                android:title="Whatslink App" />
+            <item
+                android:id="@+id/nav_jobs_info_cg"
+                android:icon="@drawable/ic_baseline_open_in_new_24"
+                android:title="Jobs Info - CG" />
+            <item
+                android:id="@+id/nav_shayari_app"
+                android:icon="@drawable/ic_baseline_open_in_new_24"
+                android:title="Hindi Shayari App" />
+        </menu>
+    </item>
+    <group>
+        <item android:title="Contact us">
+            <menu>
+                <item android:title="WhatsApp Chat"
+                    android:id="@+id/nav_live_chat"
+                    android:icon="@drawable/ic_baseline_support_agent_24"/>
+                <item android:title="Report issue or Problem"
+                    android:id="@+id/nav_report_issue"
+                    android:icon="@drawable/ic_baseline_report_problem_24"/>
+            </menu>
+        </item>
+    </group>
+</menu>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/download_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp"
+        android:foreground="?android:selectableItemBackground"
+        android:background="@android:color/transparent"
+        android:padding="8dp"
+        android:textAlignment="viewEnd"
+        android:text="CANCEL"
+        android:gravity="end"
+        android:paddingRight="20dp" />
+    <ProgressBar
+        android:id="@+id/download_pBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"/>
+    <TextView
+        android:id="@+id/download_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginBottom="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:text="Opening file."
+        android:gravity="center_horizontal" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/download_ad_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:layout_marginEnd="15dp"
+        android:visibility="gone"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="15dp"
+        app:contentPadding="15dp">
+        <FrameLayout
+            android:id="@+id/download_native_ad_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

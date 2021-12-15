@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.edgesoft.resulthour.ResultListActivity"
+    android:id="@+id/view_result_layout_root">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/view_result_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ProgressBar
+        android:id="@+id/view_result_pbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/view_result_center_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NO RESULT FOUND !"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+
+</RelativeLayout>

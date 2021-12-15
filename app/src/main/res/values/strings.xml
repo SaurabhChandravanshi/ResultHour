@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Result Hour</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="adMob_app_id">ca-app-pub-5585717909119280~2212623111</string>
+    <string name="native_ad_unit">ca-app-pub-5585717909119280/7241588519</string>
+    <string name="interstitial_ad_unit">ca-app-pub-5585717909119280/9074572608</string>
+
+    <string name="def_err_msg">Sorry for inconvenience but we can not operate at the moment, Please report if issue persist.</string>
+</resources>

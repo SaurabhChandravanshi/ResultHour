@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "697028523613",
+    "project_id": "bubilaspur",
+    "storage_bucket": "bubilaspur.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697028523613:android:91424adecb9e220b3cbfb4",
+        "android_client_info": {
+          "package_name": "com.edgesoft.resulthour"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697028523613-higbq3sco919k14pghtps7js8n9pe934.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsZEkRZVgcU60EdzzwOULAZM-oeGkPjbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "697028523613-higbq3sco919k14pghtps7js8n9pe934.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

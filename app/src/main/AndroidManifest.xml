@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.edgsoft.resulthour">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <application
+        android:name="com.edgesoft.resulthour.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.edgesoft.resulthour.Durg.ResultListActivity"
+            android:label="Results"
+            android:parentActivityName="com.edgesoft.resulthour.MainActivity"/>
+        <activity android:name="com.edgesoft.resulthour.Bilaspur.TTActivity"
+            android:label="Time Table"
+            android:parentActivityName="com.edgesoft.resulthour.MainActivity"/>
+        <activity
+            android:name="com.edgesoft.resulthour.ReportActivity"
+            android:label="Report"
+            android:parentActivityName="com.edgesoft.resulthour.MainActivity" />
+        <activity
+            android:name="com.edgesoft.resulthour.PDFActivity"
+            android:label="PDF"
+            android:parentActivityName="com.edgesoft.resulthour.MainActivity" />
+        <activity
+            android:name="com.edgesoft.resulthour.QPActivity"
+            android:label="Question Paper"
+            android:parentActivityName="com.edgesoft.resulthour.MainActivity" />
+        <activity
+            android:name="com.edgesoft.resulthour.FeatureActivity"
+            android:label="Features"
+            android:parentActivityName="com.edgesoft.resulthour.MainActivity" />
+        <activity
+            android:name="com.edgesoft.resulthour.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.edgesoft.resulthour.ResultListActivity"
+            android:label="Select Result"
+            android:parentActivityName="com.edgesoft.resulthour.MainActivity" />
+        <activity
+            android:name="com.edgesoft.resulthour.SearchResultActivity"
+            android:label="Search Result"
+            android:parentActivityName="com.edgesoft.resulthour.MainActivity" />
+        <activity
+            android:name="com.edgesoft.resulthour.ViewResultActivity"
+            android:label="Select Student"
+            android:parentActivityName="com.edgesoft.resulthour.MainActivity" />
+        <activity
+            android:name="com.edgesoft.resulthour.ResultWebViewActivity"
+            android:label="Your Result"
+            android:parentActivityName="com.edgesoft.resulthour.MainActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/adMob_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.edgesoft.resulthour"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>
